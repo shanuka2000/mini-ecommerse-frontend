@@ -2,7 +2,7 @@ import React from "react";
 import { BiChevronRight } from "react-icons/bi";
 
 type SubHeadingProps = {
-  children: string;
+  children?: string;
 };
 
 export default function SubHeading({ children }: SubHeadingProps) {
