@@ -1,10 +1,10 @@
 import Header from "@/components/header";
 import React from "react";
 
-export default function Home() {
+export default function Favourite() {
   return (
     <>
-      <Header heading="Products" />
+      <Header heading="Favourite products" />
       <main className=""></main>
     </>
   );
