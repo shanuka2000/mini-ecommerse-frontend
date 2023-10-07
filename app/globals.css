@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.formBlock {
+  @apply w-[50%] flex;
+}
+
+.formLabel {
+  @apply w-[15%] font-semibold;
+}
+
+.formInput {
+  @apply w-[80%] h-8 rounded-md bg-[#f7f7f7];
+}
