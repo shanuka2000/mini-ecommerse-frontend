@@ -10,30 +10,40 @@ export const dummyData = [
     image: product01,
     product_name: "Product-Name",
     price: "$24.00",
+    product_description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     sku: "#CA34",
     image: product02,
     product_name: "Product-Name",
     price: "$24.00",
+    product_description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     sku: "#CA35",
     image: product03,
     product_name: "Product-Name",
     price: "$24.00",
+    product_description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     sku: "#CA56",
     image: product04,
     product_name: "Product-Name",
     price: "$24.00",
+    product_description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     sku: "#CA57",
     image: product05,
     product_name: "Product-Name",
     price: "$24.00",
+    product_description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
 ] as const;
 
