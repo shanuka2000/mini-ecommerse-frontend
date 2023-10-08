@@ -16,10 +16,10 @@ export default function Products() {
         </tr>
       </thead>
       <tbody className="">
-        {dummyData.map((productItem, index) => (
+        {dummyData.map((productItem) => (
           <tr
             className="border-b-2 border-b-[#969191]/20 last:border-b-0"
-            key={index}
+            key={productItem.id}
           >
             <Product {...productItem} />
           </tr>
