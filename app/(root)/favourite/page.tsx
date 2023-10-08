@@ -1,7 +1,7 @@
 import Header from "@/components/header";
 import React from "react";
 
-export default function Favourite() {
+export default function FavouritePage() {
   return (
     <>
       <Header heading="Favourite products" />

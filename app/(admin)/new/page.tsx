@@ -2,7 +2,7 @@ import Header from "@/components/header";
 import ProductForm from "@/components/product-form";
 import React from "react";
 
-export default function page() {
+export default function NewPage() {
   return (
     <>
       <Header heading="Products" subHeading="Add new product" />

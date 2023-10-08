@@ -3,7 +3,7 @@ import Result from "@/components/result";
 import { dummyData } from "@/lib/data";
 import React from "react";
 
-export default function Page() {
+export default function ResultPage() {
   return (
     <>
       <Header heading="Products" />
