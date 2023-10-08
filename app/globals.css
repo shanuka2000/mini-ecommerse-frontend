@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 .formBlock {
-  @apply w-[50%] flex;
+  @apply w-[50%] flex items-center;
 }
 
 .formLabel {
-  @apply w-[15%] font-semibold;
+  @apply w-[5rem] font-medium;
 }
 
 .formInput {
-  @apply w-[80%] h-8 rounded-md bg-[#f7f7f7];
+  @apply w-[30rem] h-8 px-4 rounded-md bg-[#f7f7f7];
 }
