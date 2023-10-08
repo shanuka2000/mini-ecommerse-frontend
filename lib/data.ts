@@ -6,6 +6,7 @@ import product05 from "@/public/product-img-4.png";
 
 export const dummyData = [
   {
+    id: 0,
     sku: "#CA25",
     image: product01,
     product_name: "Product-Name",
@@ -14,6 +15,7 @@ export const dummyData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
+    id: 1,
     sku: "#CA34",
     image: product02,
     product_name: "Product-Name",
@@ -22,6 +24,7 @@ export const dummyData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
+    id: 2,
     sku: "#CA35",
     image: product03,
     product_name: "Product-Name",
@@ -30,6 +33,7 @@ export const dummyData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
+    id: 3,
     sku: "#CA56",
     image: product04,
     product_name: "Product-Name",
@@ -38,6 +42,7 @@ export const dummyData = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
+    id: 4,
     sku: "#CA57",
     image: product05,
     product_name: "Product-Name",
@@ -47,4 +52,4 @@ export const dummyData = [
   },
 ] as const;
 
-export const tableHeadings = ["sku", "image", "product name", "price"];
+export const tableHeadings = ["id", "sku", "image", "product name", "price"];
