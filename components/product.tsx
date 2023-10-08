@@ -1,10 +1,8 @@
-import { dummyData } from "@/lib/data";
+import { ProductProps } from "@/lib/types";
 import Image from "next/image";
 import React from "react";
 import { AiFillDelete, AiFillStar } from "react-icons/ai";
 import { MdModeEdit } from "react-icons/md";
-
-type ProductProps = (typeof dummyData)[number];
 
 export default function Product({
   sku,
