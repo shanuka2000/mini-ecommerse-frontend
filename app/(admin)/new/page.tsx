@@ -6,7 +6,7 @@ export default function page() {
   return (
     <>
       <Header heading="Products" subHeading="Add new product" />
-      <main className="">
+      <main className="w-[90%] m-auto">
         <ProductForm />
       </main>
     </>

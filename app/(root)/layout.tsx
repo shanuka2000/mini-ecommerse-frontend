@@ -1,3 +1,4 @@
+import Navigation from "@/components/navigation";
 import "../globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} max-w-[90%] m-auto`}>
+        <Navigation />
         {children}
       </body>
     </html>
