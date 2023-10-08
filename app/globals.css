@@ -11,5 +11,5 @@
 }
 
 .formInput {
-  @apply w-[30rem] h-8 px-4 rounded-md bg-[#f7f7f7];
+  @apply w-[30rem] h-8 px-4 rounded-md bg-[#f7f7f7] text-[#969191] focus:text-black text-sm;
 }
