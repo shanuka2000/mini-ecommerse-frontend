@@ -4,9 +4,7 @@ import { FaChevronRight } from "react-icons/fa";
 
 export default function Result({
   sku,
-  image,
   product_name,
-  price,
   product_description,
 }: ProductProps) {
   return (
