@@ -72,4 +72,4 @@ export const dummyData = [
   },
 ];
 
-export const tableHeadings = ["id", "sku", "product name", "price"];
+export const tableHeadings = ["id", "sku", "product name", "qty"];

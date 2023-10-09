@@ -1,8 +1,25 @@
+"use client";
+
 import { dummyData, tableHeadings } from "@/lib/data";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Product from "./product";
+import { ProductItem } from "@/lib/types";
 
 export default function Products() {
+  const [products, setProducts] = useState<ProductItem[]>([]);
+
+  useEffect(() => {
+    const fetchedProducts = async () => {
+      const response = await fetch(
+        process.env.NEXT_PUBLIC_API_BASE_URL as string
+      );
+      const data: ProductItem[] = await response.json();
+      setProducts(data);
+    };
+
+    fetchedProducts();
+  }, []);
+
   return (
     <table className="flex-1">
       <thead className="">
@@ -16,14 +33,16 @@ export default function Products() {
         </tr>
       </thead>
       <tbody className="">
-        {dummyData.map((productItem) => (
-          <tr
-            className="border-b-2 border-b-[#969191]/20 last:border-b-0"
-            key={productItem.id}
-          >
-            <Product {...productItem} />
-          </tr>
-        ))}
+        <>
+          {products.map((productItem) => (
+            <tr
+              className="border-b-2 border-b-[#969191]/20 last:border-b-0"
+              key={productItem.id}
+            >
+              <Product {...productItem} />
+            </tr>
+          ))}
+        </>
       </tbody>
     </table>
   );
