@@ -25,3 +25,73 @@ export function FormLoader() {
     </div>
   );
 }
+
+export function ImageLoader() {
+  return <div className="w-[60px] h-[60px] bg-slate-300 rounded-md"></div>;
+}
+
+export function TableLoader() {
+  return (
+    <div className="animate-pulse w-[100%] ">
+      <div className="">
+        <div className="flex gap-2 items-center">
+          <div className=" w-[20%] h-5 flex items-center">
+            <p className="bg-slate-300 w-[30%] h-3 rounded-lg"></p>
+          </div>
+          <div className=" w-[20%] h-5 flex items-center">
+            <p className="bg-slate-300 w-[40%] h-3 rounded-lg"></p>
+          </div>
+          <div className=" w-[20%] h-5 flex items-center">
+            <p className="bg-slate-300 w-[60%] h-3 rounded-lg"></p>
+          </div>
+          <div className=" w-[20%] h-5 flex items-center">
+            <p className="bg-slate-300 w-[30%] h-3 rounded-lg"></p>
+          </div>
+          <div className=" w-[20%] h-5 flex items-center"></div>
+        </div>
+      </div>
+      <div className="">
+        <div className="flex flex-col">
+          <div className="h-6 flex items-center py-10">
+            <div className="w-[20%]">
+              <p className="bg-slate-300 w-[20%] h-5 rounded-lg"></p>
+            </div>
+            <div className="w-[20%]">
+              <ImageLoader />
+            </div>
+            <div className="w-[20%]">
+              <p className="bg-slate-300 w-[20%] h-5 rounded-lg"></p>
+            </div>
+            <div className="w-[20%]">
+              <p className="bg-slate-300 w-[20%] h-5 rounded-lg"></p>
+            </div>
+            <div className="w-[20%] flex items-center justify-center gap-2">
+              <div className="w-6 h-6 bg-slate-300 rounded-md"></div>
+              <div className="w-6 h-6 bg-slate-300 rounded-md"></div>
+              <div className="w-6 h-6 bg-slate-300 rounded-md"></div>
+            </div>
+          </div>
+          <div className="h-6 flex items-center py-10">
+            <div className="w-[20%]">
+              <p className="bg-slate-300 w-[20%] h-5 rounded-lg"></p>
+            </div>
+            <div className="w-[20%]">
+              <ImageLoader />
+            </div>
+            <div className="w-[20%]">
+              <p className="bg-slate-300 w-[20%] h-5 rounded-lg"></p>
+            </div>
+            <div className="w-[20%]">
+              <p className="bg-slate-300 w-[20%] h-5 rounded-lg"></p>
+            </div>
+            <div className="w-[20%] flex items-center justify-center gap-2">
+              <div className="w-6 h-6 bg-slate-300 rounded-md"></div>
+              <div className="w-6 h-6 bg-slate-300 rounded-md"></div>
+              <div className="w-6 h-6 bg-slate-300 rounded-md"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
