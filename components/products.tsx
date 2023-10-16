@@ -11,9 +11,9 @@ export default function Products() {
 
   useEffect(() => {
     const fetchedProducts = async () => {
-      const response = await fetch(
-        process.env.NEXT_PUBLIC_API_BASE_URL as string
-      );
+      const apiUrl = process.env.NEXT_PUBLIC_API_BASE_URL as string;
+      const additionalPath = `/products`;
+      const response = await fetch(apiUrl + additionalPath);
       const data: ProductItem[] = await response.json();
       setProducts(data);
     };

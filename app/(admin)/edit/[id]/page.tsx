@@ -18,7 +18,7 @@ export default function EditPage({ params: { id } }: Props) {
   useEffect(() => {
     const fetchedProducts = async () => {
       const apiUrl = process.env.NEXT_PUBLIC_API_BASE_URL as string;
-      const additionalPath = `/${id}`;
+      const additionalPath = `/products/${id}`;
       const response = await fetch(apiUrl + additionalPath);
       const data: ProductItem = await response.json();
       setData(data);
